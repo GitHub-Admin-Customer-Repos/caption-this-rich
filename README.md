@@ -1,7 +1,63 @@
 # GitHub for Developers
 
-- Class Date: Dev 1-4[D[D [C[D[2~- 5, 2025
+- Class Date: Dev 1-4 - 5, 2025
 - Facilitator: @jasontiedt
+
+## Setup
+
+This repository hosts a slide presentation site built with Jekyll and reveal.js for GitHub training.
+
+### Prerequisites
+
+- **Ruby** (version 2.3 or higher)
+- **Bundler** - Ruby dependency manager
+- **Git** - Version control system
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/GitHub-Admin-Customer-Repos/caption-this-rich.git
+   cd caption-this-rich
+   ```
+
+2. **Run the setup script:**
+   ```bash
+   script/setup
+   ```
+   
+   This script will:
+   - Install Homebrew dependencies (if on macOS)
+   - Install the required Ruby version (if using rbenv)
+   - Install Ruby gem dependencies via Bundler
+   - Initialize and update the reveal.js git submodule
+
+   **Note:** If you encounter permission issues with bundler, you can install gems locally:
+   ```bash
+   bundle config set --local path 'vendor/bundle'
+   bundle install
+   git submodule update --init
+   ```
+
+### Running the Site Locally
+
+To run the Jekyll site on your local machine:
+
+```bash
+script/server
+```
+
+The site will be available at `http://localhost:4000/caption-this-rich`
+
+### Building the Site
+
+To build the static site:
+
+```bash
+bundle exec jekyll build --baseurl "."
+```
+
+The built site will be generated in the `_site` directory.
 
 ## Class Resources
 
