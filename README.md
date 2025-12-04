@@ -1,4 +1,4 @@
-# GitHub for Developers
+# GitHub for Developers Demo
 
 - Class Date: Dev 1-4[D[D [C[D[2~- 5, 2025
 - Facilitator: @jasontiedt
